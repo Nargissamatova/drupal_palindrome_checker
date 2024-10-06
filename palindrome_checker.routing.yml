@@ -1,0 +1,15 @@
+palindrome_checker.form:
+  path: '/palindrome'
+  defaults:
+    _form: '\Drupal\palindrome_checker\Form\PalindromeCheckerForm'
+    _title: 'Palindrome Checker'
+  requirements:
+    _permission: 'access content'
+
+palindrome_checker.content:
+  path: '/palindrome/{name}'
+  defaults:
+    _controller: '\Drupal\palindrome_checker\Controller\PalindromeCheckerController::content'
+    _title: 'Palindrome Output'
+  requirements:
+    _permission: 'access content'
